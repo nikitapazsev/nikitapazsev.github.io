@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
-@import "basic/mixins";
 @import "basic/variables";
+@import "basic/mixins";
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -8,3 +8,12 @@
     margin: 0;
     padding: 0;
 }
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@import "blocks/promo";
+@import "blocks/title";
+@import "blocks/buttons";
