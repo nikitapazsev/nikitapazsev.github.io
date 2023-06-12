@@ -21,3 +21,11 @@ document.addEventListener("keyup", (e) => {
         menu.classList.remove("active");
     }
 });
+
+// Technology
+const percents = document.querySelectorAll(".thechnology__skill-percent");
+const progress = document.querySelectorAll(".technology__skill-progress");
+
+percents.forEach((item, i) => {
+    progress[i].style.width = item.innerHTML;
+});
