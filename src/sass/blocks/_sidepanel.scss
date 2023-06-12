@@ -1,6 +1,6 @@
 .sidepanel {
     position: fixed;
-    z-index: 999;
+    z-index: 5;
     top: 225px;
     left: 55px;
     display: flex;
@@ -8,6 +8,11 @@
     justify-content: space-between;
     align-items: center;
     height: 340px;
+    &__link {
+        &:hover {
+            opacity: .7;
+        }
+    }
     &__divider {
         height: 70px;
         width: 2px;
@@ -26,4 +31,5 @@
             width: 150px;
         }
     }
+
 }
