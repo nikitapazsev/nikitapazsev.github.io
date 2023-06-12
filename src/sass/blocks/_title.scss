@@ -22,4 +22,19 @@
         font-size: 48px;
         color: $white-color;
     }
+    &__section-title {
+        position: relative;
+        text-align: center;
+        color: $black-color;
+        @include before_circle;
+    
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__section-subtitle {
+        text-align: center;
+    }
 }
