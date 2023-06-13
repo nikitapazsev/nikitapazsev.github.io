@@ -39,6 +39,24 @@
             grid-template-columns: repeat(2, minmax(350px, auto));
         }
     }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: space-between;
+            row-gap: 35px;
+            .horizontal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 35px;
+        }
+    }
 }
 
 
@@ -76,6 +94,18 @@
             width: 330px;
         }
     }
+    .price {
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: repeat(auto-fit, 350px);
+        }
+    }
+    .contacts {
+        &__wrapper {
+            justify-content: center;
+        }
+    }
+    
 }
 
 
@@ -121,6 +151,56 @@
         }
         &__skill {
             width: 250px;
+        }
+    }
+    .portfolio {
+        &__wrapper {
+            justify-content: center;
+        }
+    }
+    .price {
+        padding-top: 60px;
+        &__wrapper {
+            justify-content: center;
+            grid-template-columns: repeat(auto-fit, 440px);
+        }
+    }
+
+    .contacts {
+        padding-top: 60px;
+
+        &__wrapper {
+            padding: 0;
+        }
+        &__photo {
+            display: none;
+        }
+        &__form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+
+        &__textarea {
+            grid-column: unset;
+            width: 100%;
+        }
+
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+
+        &__btn {
+            order: 2;
+            max-width: 220px;
+            margin: 0 auto;
+        }
+
+        &__policy {
+            width: 180px;
+            margin: 0 auto;
+            line-height: 18px;
         }
     }
 }
@@ -179,4 +259,16 @@
             width: 100%;
         }
     }
-}
+    .portfolio {
+        padding-top: 60px;
+    }
+    .price {
+        padding-top: 60px;
+
+        &__wrapper {
+            margin-top: 40px;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fit, 295px);
+        }
+    }
+    }
