@@ -558,12 +558,12 @@
 
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input id="name" name="name" type="text">
+                            <input required id="name" name="name" type="text">
                             <label for="name">Your name</label>
                         </div>
 
                         <div class="contacts__input">
-                            <input id="email" name="email" type="email">
+                            <input required id="email" name="email" type="email">
                             <label for="email">Your e-mail</label>
                         </div>
 
@@ -572,7 +572,13 @@
                             <label for="text">Your text</label>
                         </div>
 
-                        <div><button class="btn contacts__btn">Send message</button></div>
+                        <div class="contacts__triggers">
+                            <button class="btn contacts__btn">Send message</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>I agree with the <a href="/policy.html">privacy policy</a></span>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
